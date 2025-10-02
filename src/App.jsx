@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 // Import Styles
 import './styles/App.css'
+import './styles/createTaskModal.css'
 
 // Import Components
 import CreateTask from './components/createTask'

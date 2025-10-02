@@ -1,0 +1,82 @@
+:root {
+    --navBackground-color: #2f3340;
+    --offwhite-color: #FFFBF8;
+    --offwhitetwentyfive-color: #fffbf836;
+    --offwhitesixty-color: #fffbf898;
+    --background-color: #222222;
+    --cardBackground-color: #2b2d2f;
+}
+
+.createModalOverlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(77, 77, 77, 0.733);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createModalContent {
+    width: 600px;
+    height: 500px;
+    background-color: var(--cardBackground-color);
+    z-index: 1001;
+    border-radius: 25px;
+    box-shadow: 0px 0px 6px 10px var(--offwhitetwentyfive-color);
+}
+
+.createModalContent form {
+    display: flex;
+    flex-direction: column;
+}
+
+.createModalContent form input, .createModalContent form textarea {
+    border: 1px solid var(--offwhite-color);
+    border-radius: 10px;
+    background: none;
+    color: var(--offwhite-color);
+    font-size: large;
+}
+
+.createModalContent form input[type="text"], .createModalContent form input[type="date"] {
+    width: 500px;
+    height: 40px;
+}
+
+.createModalContent form textarea {
+    width: 500px;
+    height: 120px;
+}
+
+.createFormInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.createFormContent {
+    margin-left: 50px;
+    color: var(--offwhite-color);
+}
+
+.createFormBtns {
+    margin: 40px 0px 0px 48px;
+    
+}
+
+.createFormBtns button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--offwhite-color);
+    border-radius: 10px;
+    background: none;
+    color: var(--offwhite-color);
+    margin-right: 10px;
+}
+
